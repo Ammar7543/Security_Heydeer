@@ -22,13 +22,13 @@
 git clone https://github.com/Ammar7543/Security_Heydeer.git
 ```
 
-## Usage
+## Set Permission
 
 ```sh
  chmod +x Security_Heydeer.sh
 ```
 
-## Run tests
+## Run
 
 ```sh
 ./Security_Heydeer.sh
