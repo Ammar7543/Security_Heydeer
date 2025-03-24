@@ -56,5 +56,3 @@ Give a ⭐️ if this project helped you!
 Copyright © 2025 [Muhammad Ammar](https://github.com/Ammar7543).<br />
 This project is [AMXPRO](AMXPRO) licensed.
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
