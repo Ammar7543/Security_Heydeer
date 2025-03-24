@@ -37,11 +37,9 @@ git clone https://github.com/Ammar7543/Security_Heydeer.git
 ## Author
 
 👤 **Muhammad Ammar**
-
-* Website: https://www.linkedin.com/in/ammarxproduction/
 * Twitter: [@AMXPRO](https://twitter.com/AMXPRO)
 * GitHub: [@Ammar7543](https://github.com/Ammar7543)
-* LinkedIn: [@Muhammad Ammar](https://linkedin.com/in/Muhammad Ammar)
+* LinkedIn: [@Muhammad Ammar] https://www.linkedin.com/in/ammarxproduction/
 
 ## Show your support
 
