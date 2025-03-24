@@ -1,127 +1,60 @@
-<h1 align="center">Welcome to <%= projectName %> 👋</h1>
+<h1 align="center">Welcome to Security_Heydeer 👋</h1>
 <p>
-<% if (isProjectOnNpm) { -%>
-  <a href="https://www.npmjs.com/package/<%= projectName %>" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/<%= projectName %>.svg">
-  </a>
-<% } -%>
-<% if (projectVersion && !isProjectOnNpm) { -%>
-  <img alt="Version" src="https://img.shields.io/badge/version-<%= projectVersion %>-blue.svg?cacheSeconds=2592000" />
-<% } -%>
-<% if (projectPrerequisites) { -%>
-<% projectPrerequisites.map(({ name, value }) => { -%>
-  <img src="https://img.shields.io/badge/<%= name %>-<%= encodeURIComponent(value) %>-blue.svg" />
-<% }) -%>
-<% } -%>
-<% if (projectDocumentationUrl) { -%>
-  <a href="<%= projectDocumentationUrl %>" target="_blank">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Ammar7543/Security_Heydeer.git" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-<% } -%>
-<% if (isGithubRepos) { -%>
-  <a href="<%= repositoryUrl %>/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  <a href="AMXPRO" target="_blank">
+    <img alt="License: AMXPRO" src="https://img.shields.io/badge/License-AMXPRO-yellow.svg" />
   </a>
-<% } -%>
-<% if (licenseName) { -%>
-  <a href="<%= licenseUrl ? licenseUrl : '#' %>" target="_blank">
-    <img alt="License: <%= licenseName %>" src="https://img.shields.io/<%= isGithubRepos ? `github/license/${authorGithubUsername}/${projectName}` : `badge/License-${licenseName}-yellow.svg` %>" />
+  <a href="https://twitter.com/AMXPRO" target="_blank">
+    <img alt="Twitter: AMXPRO" src="https://img.shields.io/twitter/follow/AMXPRO.svg?style=social" />
   </a>
-<% } -%>
-<% if (authorTwitterUsername) { -%>
-  <a href="https://twitter.com/<%= authorTwitterUsername %>" target="_blank">
-    <img alt="Twitter: <%= authorTwitterUsername %>" src="https://img.shields.io/twitter/follow/<%= authorTwitterUsername %>.svg?style=social" />
-  </a>
-<% } -%>
 </p>
-<% if (projectDescription) { -%>
 
-> <%= projectDescription %>
-<% } -%>
-<% if (projectHomepage) { -%>
+> Security_Heydeer is an advanced Security Header Analyzer Tool that scans security headers using IP/URL, SSL/TLS certificates, and response files. It helps identify misconfigurations and vulnerabilities like XSS, clickjacking, and insecure cookies. Fast, efficient, and easy to use for security researchers and developers.
 
-### 🏠 [Homepage](<%= projectHomepage %>)
-<% } -%>
-<% if (projectDemoUrl) { -%>
-
-### ✨ [Demo](<%= projectDemoUrl %>)
-<% } -%>
-<% if (projectPrerequisites && projectPrerequisites.length) { -%>
-
-## Prerequisites
-
-<% projectPrerequisites.map(({ name, value }) => { -%>
-- <%= name %> <%= value %>
-<% }) -%>
-<% } -%>
-<% if (installCommand) { -%>
+### ✨ [Demo](https://github.com/Ammar7543/Security_Heydeer.git)
 
 ## Install
 
 ```sh
-<%= installCommand %>
+git clone https://github.com/Ammar7543/Security_Heydeer.git
 ```
-<% } -%>
-<% if (usage) { -%>
 
 ## Usage
 
 ```sh
-<%= usage %>
+ chmod +x Security_Heydeer.sh
 ```
-<% } -%>
-<% if (testCommand) { -%>
 
 ## Run tests
 
 ```sh
-<%= testCommand %>
+./Security_Heydeer.sh
 ```
-<% } -%>
-<% if (authorName || authorTwitterUsername || authorGithubUsername) { -%>
 
 ## Author
-<% if (authorName) { %>
-👤 **<%= authorName %>**
-<% } %>
-<% if (authorWebsite) { -%>
-* Website: <%= authorWebsite %>
-<% } -%>
-<% if (authorTwitterUsername) { -%>
-* Twitter: [@<%= authorTwitterUsername %>](https://twitter.com/<%= authorTwitterUsername %>)
-<% } -%>
-<% if (authorGithubUsername) { -%>
-* GitHub: [@<%= authorGithubUsername %>](https://github.com/<%= authorGithubUsername %>)
-<% } -%>
-<% if (authorLinkedInUsername) { -%>
-* LinkedIn: [@<%= authorLinkedInUsername %>](https://linkedin.com/in/<%= authorLinkedInUsername %>)
-<% } -%>
-<% } -%>
-<% if (issuesUrl) { -%>
 
-## 🤝 Contributing
+👤 **Muhammad Ammar**
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](<%= issuesUrl %>). <%= contributingUrl ? `You can also take a look at the [contributing guide](${contributingUrl}).` : '' %>
-<% } -%>
+* Website: https://www.linkedin.com/in/ammarxproduction/
+* Twitter: [@AMXPRO](https://twitter.com/AMXPRO)
+* GitHub: [@Ammar7543](https://github.com/Ammar7543)
+* LinkedIn: [@Muhammad Ammar](https://linkedin.com/in/Muhammad Ammar)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-<% if (authorPatreonUsername) { -%>
 
-<a href="https://www.patreon.com/<%= authorPatreonUsername %>">
+<a href="https://www.patreon.com/AMXPRO">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
-<% } -%>
-<% if (licenseName && licenseUrl) { -%>
 
 ## 📝 License
 
-<% if (authorName && authorGithubUsername) { -%>
-Copyright © <%= currentYear %> [<%= authorName %>](https://github.com/<%= authorGithubUsername %>).<br />
-<% } -%>
-This project is [<%= licenseName %>](<%= licenseUrl %>) licensed.
-<% } -%>
+Copyright © 2025 [Muhammad Ammar](https://github.com/Ammar7543).<br />
+This project is [AMXPRO](AMXPRO) licensed.
 
 ***
-<%- include('footer.md'); -%>
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
